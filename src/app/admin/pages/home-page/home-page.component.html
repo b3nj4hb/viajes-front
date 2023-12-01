@@ -1,0 +1,13 @@
+<div class="h-screen flex justify-center items-center">
+
+    <div class="bg-gray-500 rounded-full">
+        <button class="rounded-full bg-gray-500 text-white m-4 p-2 text-xl border-2 shadow-xl">Gestión de Buses</button>
+        <button class="rounded-full bg-gray-500 text-white m-4 p-2 text-xl border-2 shadow-xl">Gestión de viajes</button>
+        <button class="rounded-full bg-gray-500 text-white m-4 p-2 text-xl border-2 shadow-xl">Gestión de conductores</button>
+        <button class="rounded-full bg-gray-500 text-white m-4 p-2 text-xl border-2 shadow-xl">Gestión de Rutas</button>
+    </div>
+
+    <div *ngFor="let b of buttons" class="bg-gray-500 rounded-full"> 
+        <button class="rounded-full bg-gray-500 text-white m-4 p-2 text-xl border-2 shadow-xl">{{b.text}}</button>
+    </div>
+</div>
